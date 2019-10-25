@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#19afe7"
+    tools:context="com.example.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewHumi"
+        android:layout_width="167dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="center"
+        android:hint="humidity"
+        android:textColor="#ffff"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="152dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="City"
+        android:inputType="textPersonName"
+        android:textColor="#ffff"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="132dp"
+        android:background="#ffc600"
+        android:onClick="search"
+        android:text="Search"
+        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="273dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="72dp"
+        android:textColor="#ffff"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:hint="Name City"
+        android:textSize="38sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="235dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="88dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/weather" />
+
+    <TextView
+        android:id="@+id/textViewTemp"
+        android:layout_width="164dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="388dp"
+        android:gravity="center"
+        android:hint="Temp C°"
+        android:textColor="#ffff"
+        android:textSize="38sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="76dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="#ffff"
+        android:textSize="14sp"
+        android:hint="id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="349dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:hint="Description"
+        android:textColor="#ffff"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="save"
+        android:text="Save City"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDescription"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnLocalisation"
+        android:layout_width="92dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:background="#ffc600"
+        android:onClick="localisation"
+        android:text="GPS"
+        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
